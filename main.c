@@ -4,12 +4,9 @@
 #include "s21_string.h"
 
 int main() {
-  char lotr[] = "_-=Властелин к0лец=-_";          
-  char * ring = strchr(lotr, '0');          
-  char * ring2 = strchr(lotr, '0');                  
-  
-  printf("%s\n", ring);
-  printf("%s\n", ring2);
-  
+  char str[30] = "|||helloworld|||";
+
+  printf("%s\n", (char*) s21_trim(str, "|"));
+
   return 0;
 }

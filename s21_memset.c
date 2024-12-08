@@ -1,5 +1,4 @@
 #include "s21_string.h"
-#include <stdlib.h>
 
 void* s21_memset(void *str, int c, s21_size_t n) {
   s21_size_t size = sizeof(str) + (sizeof(c) * n);

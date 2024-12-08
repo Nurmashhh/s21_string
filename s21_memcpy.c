@@ -1,5 +1,5 @@
 #include "s21_string.h"
-#include <stdlib.h>
+
 
 void* s21_memcpy(void *dest, const void *src, s21_size_t n) {
   s21_size_t dest_size = sizeof(dest);
