@@ -1,12 +1,14 @@
 #include <stdio.h>
 #include <string.h>
+#include <check.h>
 
 #include "s21_string.h"
 
-int main() {
-  char str[30] = "|||helloworld|||";
-
-  printf("%s\n", (char*) s21_trim(str, "|"));
-
-  return 0;
+int main(void)
+{
+  char str[20] = "Hello ";
+  char str2[20] = "World!";
+  printf("%s\n",s21_strncat(str, str2, 5));
+  strncat(str, str2, 5);
+  printf("%s\n", str);
 }

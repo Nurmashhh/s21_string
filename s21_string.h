@@ -2,6 +2,7 @@
 #define S21_STRING_H
 
 #include <stdlib.h>
+#include <string.h>
 
 #define s21_NULL (void*) 0
 
