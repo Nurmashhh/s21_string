@@ -1,5 +1,4 @@
 #if defined __linux__
-#define OFFSET 14
 #define UNKNOWN_ERROR "Unknown error "
 #define MESSAGES_COUNT 134
 #define ERROR_MESSAGES                                                         \
@@ -69,7 +68,6 @@
   }
 
 #elif defined __APPLE__
-#define OFFSET 15
 #define UNKNOWN_ERROR "Unknown error: "
 #define MESSAGES_COUNT 107
 #define ERROR_MESSAGES                                                         \
@@ -133,7 +131,6 @@
 //   HEXADECIMAL = 16,
 //   DECIMAL = 10,
 //   OCTAL = 8,
-// };
 
 // static void to_string(int number, char* string) {
 //   const char charset[DECIMAL] = "0123456789";

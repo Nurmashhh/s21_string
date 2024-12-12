@@ -6,9 +6,9 @@
 
 int main(void)
 {
-  char str[20] = "Hello ";
-  char str2[20] = "World!";
-  printf("%s\n",s21_strncat(str, str2, 5));
-  strncat(str, str2, 5);
-  printf("%s\n", str);
+  char str[20] = "Hello";
+  char str2[20] = "llo";
+
+  printf("%s\n", s21_strstr(str, str2));
+  return 0;
 }

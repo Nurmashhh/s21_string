@@ -1,12 +1,17 @@
 #include "s21_string.h"
 
 char* s21_strncat(char* dest, const char* str, s21_size_t n) {
-  char* result = s21_NULL;
+  if (dest == s21_NULL || str == s21_NULL) {
+    return s21_NULL;
+  } 
 
-  for (s21_size_t i = s21_strlen(dest); i < n; i++) {
-    dest[i] = str[i];
+  s21_size_t dest_len = s21_strlen(dest); 
+
+  for (s21_size_t i = 0; str[i] != '\0' && i < n; i++) {
+    dest[dest_len + i] = str[i];  
   }
-  result = dest;
 
-  return result;
+  dest[dest_len + s21_strlen(str) + 1] = '\0';  
+
+  return dest;
 }
